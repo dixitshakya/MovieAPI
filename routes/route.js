@@ -21,23 +21,5 @@ router.get('/api/movies/:id',(req,res,next)=>{
         else res.json(task);
   })
 })
-/*
-//Post request
-router.post('/api/movie',(req,res,next) =>{
-    let movie = req.body
-    if(!movie.title || !movie.director || !movie.summary)
-    {
-    res.status(400)
-    res.json({
-        "error":"Data Not Valid"
-    })
-    }
-    else {
-    db.movies.save(movie,(err,movie)=>{
-        if(err) res.send(err)
-        else res.json(movie)
-        })
-    }
-})
-*/
+
 module.exports = router
